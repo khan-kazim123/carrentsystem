@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <!-- <link rel="stylesheet" href="submit.css"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.d{
+    margin: 30px;
+}
+.p
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: -150px;
+    /* margin-right: 100px; */
+    margin-top: 10%;
+    background: radial-gradient(#fff, #ffd6d6);
+    /* background: radial-gradient(#fff, rgb(39, 216, 39)); */
+    padding: 50px;
+    padding-left: 50px;
+    word-wrap: none; 
+    margin-top: 7px;
+}
+.a
+{
+    flex-basis: 25%;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.e
+{
+    padding-right: 150px;
+    /* align-items: center; */
+}
+.q
+{
+    text-align: center;
+}
+.btn
+{
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+        
+}
+.btn:hover{
+    background: black;
+   color: #ffd6d6;
+     
+}
+
+h1{
+    margin-bottom: 20px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.header-btn .sign-in{
+    background: #474fa0;
+    color: #FFF;
+    border-radius: 0.5rem;
+}
+span
+{
+    color: rgb(255, 28, 28);
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <!-- <a href="#" class="logo"><img src="img/jeep.png" alt=""></a> -->
+        <div class="bx" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <div class="d">
+         <div class="e">
+            <img src="img/about.png"  height="300px" width="500px">
+            <h1>Choose perferences <span>according to your choice</span></h1>
+            <h1>Just <span>some casualities</span> and you'd be done meeting your wish.</h1>
+            <div class="p">
+                <div class="a">
+                    <h2>Book a car</h2><br>
+                    <!-- <a href="book.html"> <button class="q"> Book </button></a> -->
+                    <a href="http://localhost:999/book" class="btn">Book</a> 
+                </div>
+                <div class="a">
+                    <h2>Return Car</h2><br>
+                    <a href="http://localhost:999/return" class="btn">Return</a>
+                 </div>
+                 <br>
+                 <div class="a">
+                    <h2>Update-Info</h2><br>
+                    <a href="http://localhost:999/updaterent" class="btn">Update your car info</a>
+                 </div> 
+                 <br>
+                 <div class="a">
+                    <h2>Rent my Car</h2><br>
+                    <a href="http://localhost:999/rent" class="btn">Rent</a>
+                    <!-- <a href="rent.html"><button class="q" >Rent </button> </a> -->
+                 </div>
+                 <div class="a">
+                       <h2>Be a Driver</h2><br>
+                       <!-- <a href="driver.html"> <button>Become Driver</button></a> -->
+                       <a href="http://localhost:999/driver" class="btn">Be a Driver</a>
+                 </div>
+                 <div class="a">
+                    <h2>Resign</h2><br>
+                    <!-- <a href="driver.html"> <button>Become Driver</button></a> -->
+                    <a href="http://localhost:999/resign" class="btn">Resign</a>
+              </div>
+              <div class="a">
+                <h2>Withdraw Car</h2><br>
+                <a href="http://localhost:999/withdraw" class="btn">Withdraw</a>
+              </div>
+            </div>
+         </div>
+    </div>
+    
+</body>
+</html>

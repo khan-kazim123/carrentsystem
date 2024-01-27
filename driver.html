@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+form{
+    text-align: center; 
+    background: radial-gradient(#fff, #ffd6d6);
+    padding: 50px 0;
+    margin: auto;
+    position: relative;
+    /* overflow: hidden; */
+    height: 600px;
+    width: 350px;
+    box-shadow: 0 0 20px 0;
+
+}
+.i3{
+    padding: 100px 0;
+    /* text-align: center; */
+    word-spacing: 5px;
+    margin-bottom: 400px;
+
+}
+.btn
+{
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: black;
+   color: #ffd6d6;  
+}
+    </style>
+</head>
+<body>
+    <div class="i3">
+    <form class="d" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <br>
+    
+        <label for="cnic">CNIC:</label>
+        <input type="text" id="cnic" name="cnic" required><br>
+        <br>
+    
+        <label for="contact-no">Contact.No:</label>
+        <input type="text" id="contact-no" name="phone" required><br>
+        <br>
+
+        <label for="pickup">Licence No:</label>
+        <input type="text" id="pickup" name="license" required><br>
+        <br>
+
+        <label for="drop">Date of birth:</label>
+        <input type="date" id="drop" name="dob" required><br>
+        <br>
+    
+        <label for="drop">Experience Year:</label>
+        <input type="year" id="drop" name="exp" required><br>
+        <br>
+
+        <label for="drop">Any Crime Record:</label>
+        <input type="checkbox" id="drop" name="" ><br>
+        <br>
+
+        <!-- <label for="cartype">Cartype:</label>
+        <select id="cartype" name="cartype" required>
+            <option value="" disabled selected>Select a car type</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="hatchback">Hatchback</option>
+            <option value="SevenSeater">Seven Seater</option>
+            <option value="Van">Van</option>
+        </select><br>
+        <br> -->
+
+    
+        <input  class="btn" type="submit" value="process request">
+    </form>
+</div>
+</body>
+</html>

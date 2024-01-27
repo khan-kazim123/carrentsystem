@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign_up.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+form1 {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    background-image: url(img/Car\ Website\ –\ 1@2x.png);
+    background-repeat:no-repeat ;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1);
+    /* word-spacing: 3%; */
+}
+
+.form1-label {
+    font-weight: 500;
+    color: var(--text-color);
+    /* margin-bottom: 0; */
+}
+
+.form1-control {
+    /* width: 100%; */
+    margin-bottom: 15px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.btn1-btn1-primary {
+    width: 10%;
+    padding: 50px;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 100px;
+    margin-left: 250px;
+}
+/* .col-md-4 .form1-label {
+    margin-bottom: 0;
+} */
+
+.btn1-primary:hover {
+    background: var(--second-color);
+}
+.col-md-4 {
+    margin-left: 200px;
+    margin-top: 100px;
+    /* padding-top: 30%; */
+
+}
+.col-md-5{
+    margin-left: 200px;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 10%; */
+}
+
+.col-md-6 .form1-label {
+    margin-left: 200px;
+    margin-bottom: 1500px;
+    /* padding-bottom: 10%; */
+}
+.btn1-btn1-primary{
+    color: whitesmoke;
+    background-color: rgb(1, 27, 3);
+    padding: 1%;
+    /* border: none; */
+    border-radius: 0.5rem;
+
+}
+.btn1-btn1-primary:hover{
+    background:cornflowerblue ;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <form class="d" novalidate method="post">
+     
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form1-label">Email </label>
+          <input type="email" class="form1-control" id="validationCustom01" name="name" value="" required>
+        </div>
+        <div class="col-md-5">
+          <label for="validationCustom02" class="form1-label">Password</label>
+          <input type="password" class="form1-control" name="password" id="validationCustom02" value="" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom02" class="form1-label">Confirm Password</label>
+            <input type="password" name="confirm" class="form1-control" id="validationCustom02" value="" required>
+          </div>
+        
+        <div class="col-12">
+            <button class="btn1-btn1-primary"  type="submit"  >Sign Up</button>
+        </div>
+      </form>
+
+    
+</body>
+</html>
